@@ -112,3 +112,20 @@ button {
 .b-tel__img {
   object-fit: cover;
 }
+
+/* BUTTON */
+
+.b-button {
+  background-color: #ff4e2e;
+  width: 100%;
+  color:#fff;
+  padding: 20px 20px;
+}
+
+/* MAIN */ 
+.b-aboutme {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+
+}
