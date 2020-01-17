@@ -34,13 +34,16 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
 a {
   text-decoration: none;
   display: block;
 }
+
 ul {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -49,20 +52,28 @@ h5,
 h6 {
   margin: 0;
 }
+
 button {
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
+
 /* CONTAINER */
 .container-box {
   padding-left: 20px;
   padding-right: 20px;
   
 }
+
 /* HEADER */
+.b-header {
+  padding-top:15px;
+}
 .b-header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .b-burger-box {
   cursor: pointer;
@@ -71,7 +82,7 @@ button {
   display: block;
   width: 25px;
   height: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   background-color: #fa0891;
 }
 .b-burger:last-child {
