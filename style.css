@@ -57,6 +57,12 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  font-size: 16px;
+}
+
+body {
+  background-color: #fbfbfb;
+  overflow-x: hidden;
 }
 
 /* CONTAINER */
@@ -119,13 +125,94 @@ button {
   background-color: #ff4e2e;
   width: 100%;
   color:#fff;
-  padding: 20px 20px;
+  padding: 18px 20px;
 }
 
 /* MAIN */ 
+.b-main {
+  padding-top: 85px;
+}
+
 .b-aboutme {
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
+  position: relative;
 
+}
+.b-aboutme__block {
+  padding-top: 7px;
+}
+
+.b-aboutme__inner {
+  width: 100%;
+}
+
+.b-aboutme__img-box {
+  width:280px;
+  height: 330px;
+  padding-left: 60px;
+}
+
+.b-aboutme__img {
+  object-fit: cover;
+}
+
+.b-aboutme__background {
+  background:linear-gradient(to bottom, #fa0891, #ff8362);
+  width: 100%;
+  height: 330px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1; 
+}
+
+.b-aboutme__title {
+ font-size:30px; 
+ font-weight: 900;
+ color: #1f1f24;
+ margin-bottom: 8px;
+}
+
+.b-subtitle {
+  font-size:30px;
+  color: #1f1f24;
+}
+.b-page {
+  color: #919bb3;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+.b-page__size {
+ font-size: 18px;
+}
+
+.b-skills {
+  text-align: center;
+  padding-top: 42px;
+}
+.b-skills__subtitle {
+  margin-bottom: 45px;
+  font-size:30px;
+  color: #1f1f24;
+}
+.b-skills__listed {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+}
+
+.b-skills__work {
+  width: 220px;
+  max-width: 100%;
+  margin-bottom: 24px;
+  line-height: 22px;
+}
+.b-skills__img {
+  margin-bottom: 12px;
+}
+figure  img {
+  width: 280px;
 }
