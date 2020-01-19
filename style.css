@@ -52,7 +52,10 @@ h5,
 h6 {
   margin: 0;
 }
-
+h2 {
+  font-size:30px;
+  color: #1f1f24;
+}
 button {
   cursor: pointer;
   border: none;
@@ -175,10 +178,6 @@ body {
  margin-bottom: 8px;
 }
 
-.b-subtitle {
-  font-size:30px;
-  color: #1f1f24;
-}
 .b-page {
   color: #919bb3;
   line-height: 22px;
@@ -194,14 +193,13 @@ body {
 }
 .b-skills__subtitle {
   margin-bottom: 45px;
-  font-size:30px;
-  color: #1f1f24;
 }
 .b-skills__listed {
   display: flex;
   flex-direction:column;
   align-items: center;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .b-skills__work {
@@ -213,6 +211,32 @@ body {
 .b-skills__img {
   margin-bottom: 12px;
 }
+.b-examples {
+  text-align: center;
+  padding-top: 95px;
+}
+
+.b-examples__subtitle {
+  margin-bottom: 43px;
+}
+.b-examples__wrapp {
+  display: flex;
+}
 figure  img {
   width: 280px;
+}
+
+/*FOOTER */ 
+
+.b-footer__end {
+  background-color: #31293c;
+  color: #ffffff;
+  font-size: 12px;
+}
+.b-footer__text {
+  margin:0 auto;
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: normal;
 }
