@@ -8,6 +8,7 @@
   src: local('Roboto'), local('Roboto-Regular'), url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-regular.woff') format('woff'), /* Modern Browsers */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-regular.svg#Roboto') format('svg');
   /* Legacy iOS */
 }
+
 /* roboto-500 - cyrillic_cyrillic-ext_latin */
 @font-face {
   font-family: 'Roboto';
@@ -18,6 +19,7 @@
   src: local('Roboto Medium'), local('Roboto-Medium'), url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-500.woff2') format('woff2'), /* Super Modern Browsers */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-500.woff') format('woff'), /* Modern Browsers */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-500.svg#Roboto') format('svg');
   /* Legacy iOS */
 }
+
 /* roboto-700 - cyrillic_cyrillic-ext_latin */
 @font-face {
   font-family: 'Roboto';
@@ -28,6 +30,7 @@
   src: local('Roboto Bold'), local('Roboto-Bold'), url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-700.woff') format('woff'), /* Modern Browsers */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('./fonts/roboto-v20-cyrillic_cyrillic-ext_latin-700.svg#Roboto') format('svg');
   /* Legacy iOS */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -52,10 +55,12 @@ h5,
 h6 {
   margin: 0;
 }
+
 h2 {
   font-size:30px;
   color: #1f1f24;
 }
+
 button {
   cursor: pointer;
   border: none;
@@ -84,9 +89,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .b-burger-box {
   cursor: pointer;
 }
+
 .b-burger {
   display: block;
   width: 25px;
@@ -94,9 +101,11 @@ body {
   margin-bottom: 4px;
   background-color: #fa0891;
 }
+
 .b-burger:last-child {
   background: linear-gradient(to bottom, #fa0891, #f1da36);
 }
+
 .b-header__nav {
   display: none;
 }
@@ -104,14 +113,17 @@ body {
 .b-header__contact {
   display: flex;
 }
+
 .b-tel {
   font-size: 18px;
   font-weight: bold;
   color:#1f1f24;
 }
+
 .b-button--hiden {
   display: none;
 }
+
 .b-header__tel {
   width: 26px;
   height: 26px;
@@ -214,6 +226,7 @@ body {
 .b-examples {
   text-align: center;
   padding-top: 95px;
+  padding-bottom: 51px;
 }
 
 .b-examples__subtitle {
@@ -221,11 +234,30 @@ body {
 }
 .b-examples__wrapp {
   display: flex;
-}
-figure  img {
-  width: 280px;
+  margin-bottom: 67px;
 }
 
+figure img {
+  width: 280px;
+  height: 250px;
+}
+.b-advertising {
+  background:linear-gradient(to bottom, #fa0891, #ff8362);
+  padding-top: 48px;
+  padding-bottom: 50px;
+}
+.b-advertising__title {
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: -0.8px;
+  margin-bottom: 38px;
+  line-height: 38px;
+}
+.b-advertising__page {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 28px;
+}
 /*FOOTER */ 
 
 .b-footer__end {
@@ -239,4 +271,33 @@ figure  img {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: normal;
+}
+
+.b-footer__number::before {
+  content: "";
+  display:inline-block;
+  width: 14px;
+  height: 10px;
+  background-image: url(img/numbermobil.png);
+}
+
+.b-footer__mail::before{
+  content: "";
+  display:inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url(img/callmobil.png)
+}
+
+.b-social {
+  display:flex;
+  justify-content: space-around;
+}
+
+@media  (min-width: 660px) and (max-width: 1024px) {
+   .b-skills__listed{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
 }
