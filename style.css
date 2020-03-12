@@ -143,6 +143,22 @@ body {
   padding: 18px 20px;
 }
 
+.button-box {
+ 
+}
+.b-button-mobile {
+  width: 12px;
+  height: 10px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin-left: 16px;
+  outline: none;
+ 
+}
+.b-button-mobile:hover {
+   cursor: pointer;
+   background-color: #ff4e2e;
+}
 /* MAIN */ 
 .b-main {
   padding-top: 85px;
@@ -184,7 +200,7 @@ body {
 }
 
 .b-aboutme__title {
- font-size:30px; 
+ font-size:33px; 
  font-weight: 900;
  color: #1f1f24;
  margin-bottom: 8px;
@@ -225,7 +241,7 @@ body {
 }
 .b-examples {
   text-align: center;
-  padding-top: 95px;
+  padding-top: 55px;
   padding-bottom: 51px;
 }
 
@@ -271,8 +287,12 @@ figure img {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: normal;
-}
 
+}
+.b-footer__number {
+   color: #8993ad;
+   font-weight: bold;
+}
 .b-footer__number::before {
   content: "";
   display:inline-block;
@@ -281,12 +301,22 @@ figure img {
   background-image: url(img/numbermobil.png);
 }
 
+.b-footer__mail {
+  color: #8993ad;
+  font-weight: bold;
+}
+
 .b-footer__mail::before{
   content: "";
   display:inline-block;
   width: 13px;
   height: 13px;
   background-image: url(img/callmobil.png)
+}
+
+.b-footer__link {
+  color: #8993ad;
+
 }
 
 .b-social {
